@@ -5,7 +5,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Helvetica', Verdana, sans-serif;
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+	font-weight: 100;
 }
 
 .jumbotron-wrapper {
@@ -15,7 +16,7 @@ body {
 }
 
 header {
-	height: 125px;
+	height: 250px;
 	padding: 20px 40px;
 	background: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,1)); /*Safari 5.1-6*/
 	background: -o-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,1)); /*Opera 11.1-12*/
@@ -30,6 +31,8 @@ header a {
 
 .logo {
 	float: left;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 32px;
 }
 
 nav {
@@ -43,7 +46,7 @@ nav ul {
 nav li {
 	list-style-type: none;
 	display: inline-block;
-	padding: 0 10px;
+	padding: 10px 10px;
 	text-transform: uppercase;
 }
 

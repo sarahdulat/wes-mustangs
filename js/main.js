@@ -19,4 +19,8 @@ $('document').ready(function() {
 		alert("Thank you for getting in touch!");
 	});
 
+	$('#burger-show').click(function() {
+		$('.dropdown').slideToggle(800);
+	});
+
 });

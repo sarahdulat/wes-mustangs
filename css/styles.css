@@ -9,6 +9,10 @@ body {
 	font-weight: 100;
 }
 
+a {
+	text-decoration: none;
+}
+
 .jumbotron-wrapper {
 	background-image: url(../img/CIMG2138.JPG);
 	background-size: cover;
@@ -25,7 +29,6 @@ header {
 }
 
 header a {
-	text-decoration: none;
 	color: #FFFFFF;
 }
 
@@ -39,14 +42,14 @@ nav {
 	float: right;
 }
 
-nav ul {
+ul {
 
 }
 
-nav li {
+li {
 	list-style-type: none;
 	display: inline-block;
-	padding: 10px 10px;
+	padding: 0 10px;
 	text-transform: uppercase;
 }
 
@@ -56,12 +59,12 @@ nav a:hover {
 
 .hero-content {
 	text-align: center;
-	height: 350px;
+	height: 200px;
 	color: #FFFFFF;
 }
 
-h1 {
-
+.hero-content h2 {
+	font-weight: 100;
 }
 
 h2 {
@@ -75,6 +78,40 @@ button {
 	border: 0;
 	font-size: 14px;
 	border-radius: 5px;
+	cursor: pointer;
+}
+
+main {
+	width: 600px;
+	margin: 10px auto;
+}
+
+.row {
+	display: block;
+	width: 600px;
+	float: left;
+}
+
+.col {
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding-right: 10px;
+}
+
+.col img {
+	max-width: 100%;
+}
+
+footer {
+	height: 100px;
+	background-color: #000000;
+	float: left;
+	width: 100%;
+}
+
+footer a {
+	color: #FFFFFF;
 }
 
 .clearfix:after {

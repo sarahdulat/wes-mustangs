@@ -22,7 +22,7 @@ a {
 .backToTop {
 	float: right;
 	font-size: 10px;
-	color: #FFFFFF;
+	color: #000000;
 	display: none;
 	padding-right: 32px;
 	position: relative;
@@ -47,7 +47,7 @@ nav {
 	float: right;
 }
 
- .desktop ul {
+.desktop ul {
 	list-style-type: none;
 	padding-left: 0;
 	margin: 12px 0;
@@ -64,7 +64,6 @@ nav {
     font-size: 12px;
     border-radius: 3px;
     letter-spacing: 1px;
-    width: 100%;
 }
 
 .desktop li:hover, .mobile li:hover {
@@ -127,7 +126,7 @@ nav a {
 	font-weight: 100;
 }
 
-button {
+.hero-content button {
 	color: #FFFFFF;
 	background-color: #D20000;
 	padding: 18px 32px;
@@ -137,7 +136,7 @@ button {
 	cursor: pointer;
 }
 
-button:hover {
+.hero-content button:hover {
 	background-color: #990000;
 }
 
@@ -147,6 +146,7 @@ main {
 	width: 768px;
 	margin: 10px auto;
 	padding: 20px 20px;
+	background-color: #FFFFFF;
 }
 
 .intro {
@@ -170,17 +170,52 @@ main {
 	max-width: 100%;
 }
 
+/*FORM*/
+
+.form h1 {
+	color: #FFFFFF;
+}
+
+.form {
+	width: 100%;
+	margin: 10px 0;
+	padding: 20px 20px;
+	background-color: #990000;
+	clear: both;
+	text-align: center;
+}
+
+input, textarea {
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #FFFFFF;
+	width: 768px;
+}
+
+.form button {
+	color: #D20000;
+	background-color: #FFFFFF;
+	padding: 18px 32px;
+	border: 0;
+	font-size: 14px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.form button:hover {
+	background-color: #F2F2F2;
+}
+
 /*FOOTER*/
 
 footer {
 	height: 50px;
-	background-color: #000000;
 	float: left;
 	width: 100%;
 }
 
 footer a {
-	color: #FFFFFF;
+	color: #000000;
 }
 
 footer ul {
@@ -232,6 +267,13 @@ main, .row {
 
 .mobile {
 		display: block;
+	}
+
+input, textarea {
+	width: 325px;
+	}
+.container {
+		max-width: 100%;
 	}
 
 }

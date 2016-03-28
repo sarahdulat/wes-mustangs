@@ -1,3 +1,10 @@
+function close_box()
+	{
+		$('#backdrop, .lightbox').fadeOut(300), function() {
+			$('#backdrop, .lightbox').css('display', 'none');
+		};
+	}
+
 $('document').ready(function() {
 
 		//Check to see if the window is top if not then display button
@@ -22,5 +29,19 @@ $('document').ready(function() {
 	$('#burger-show').click(function() {
 		$('.dropdown').slideToggle(800);
 	});
+
+	$(".entry").on('click', function(e) {
+
+		var target = $(e.target);
+		var src = target.attr('src');
+
+		$('.lightbox img').attr('src', src);
+        $(".lightbox").fadeIn(300);      // to make the box visible
+        $("#backdrop").fadeIn(800);       // to make the backdrop visible
+    });
+
+    $('#backdrop').click(function(){
+					close_box();
+				});
 
 });

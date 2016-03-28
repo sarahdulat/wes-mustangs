@@ -20,7 +20,7 @@ a {
 
 .backToTop {
 	float: right;
-	font-size: 10px;
+	font-size: 18px;
 	color: #000000;
 	display: none;
 	padding-right: 32px;
@@ -61,7 +61,7 @@ nav {
 	text-transform: uppercase;
 	text-align: center;
     background-color: #D20000;
-    width: 100px;
+    width: 90px;
     line-height: 30px;
     font-size: 12px;
     border-radius: 3px;
@@ -109,6 +109,7 @@ nav a {
 	display: inline;
 	padding: 0 5px;
 	margin-right: 32px;
+	transition: background-color 0.5s ease;
 }
 
 /*HERO IMAGE*/
@@ -140,6 +141,7 @@ nav a {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: background-color 0.5s ease;
+	text-transform: uppercase;
 }
 
 .hero-content button:hover {
@@ -153,10 +155,22 @@ main {
 	margin: 10px auto;
 	padding: 20px 20px;
 	background-color: #FFFFFF;
+	line-height: 28px;
+}
+
+.about {
+	width: 500px;
+	margin: 0 auto;
 }
 
 .intro {
 	padding-top: 64px;
+	width: 500px;
+	margin: 0 auto;
+}
+
+.intro img {
+	max-width: 100%;
 }
 
 .row {
@@ -176,9 +190,74 @@ main {
 	max-width: 100%;
 }
 
+.col p {
+	font-size: 10px;
+	font-style: italic;
+	margin-top: 0; 
+}
+
+/*--GALLERY--*/
+
+.gallery {
+    margin: 0 auto;
+    padding-top: 64px;
+}
+
+.gallery h1 {
+	padding-left: 16px;
+}
+
+.entry {
+	float: left;
+	width: 25%;
+	padding: 0 16px;
+	margin-bottom: 16px;
+}
+
+.entry img {
+	max-width: 100%;
+}
+
+.desc {
+	clear: both;
+	padding-left: 16px;
+}
+
+/*--LIGHTBOX--*/
+
+#backdrop
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .7;
+	filter:alpha(opacity=0);
+	z-index:50;
+	display:none;
+}
+
+.lightbox {
+	position: fixed;
+	width: 640px;
+	height: 480px;
+	margin-left: -320px;
+	margin-top: -240px;
+	top: 50%;
+	left: 50%;
+	display: none;
+	text-align: center;
+	z-index: 51;
+	-moz-box-shadow:0px 0px 5px #444444;
+	-webkit-box-shadow:0px 0px 5px #444444;
+	box-shadow:0px 0px 5px #444444;
+}
+
 /*FORM*/
 
-.form h1 {
+.form h1, .form h2 {
 	color: #FFFFFF;
 }
 
@@ -196,6 +275,7 @@ input, textarea {
 	margin: 10px 0;
 	border: 1px solid #FFFFFF;
 	width: 768px;
+	text-transform: uppercase;
 }
 
 .form button {
@@ -269,7 +349,7 @@ footer a:hover {
 		display: none;
 		}
 
-	main, .row {
+	main, .row, .about, .intro {
 		width: 100%;
 		}
 
@@ -280,9 +360,14 @@ footer a:hover {
 	input, textarea {
 		width: 325px;
 		}
-	.container {
+	.container, {
 			max-width: 100%;
 		}
+
+	.entry {
+		width: 100%;
+		float: none;
+	}
 
 }
 

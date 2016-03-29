@@ -45,4 +45,18 @@ $('document').ready(function() {
 					close_box();
 				});
 
+ //    var $entries = $('.entry img')
+	// var imgs = [];
+	// for (var i=0; i < entries.length, i++) {
+	// var src = entries[i].attr('src')
+	// imgs.push(src);
+	// }
+
+	// $('.next').on('click', function(e) {
+	// var $target = $(e.target);
+	// var src = target.attr('src');
+
+	// $('.lightbox img').attr('src', src);
+	// }
+
 });
